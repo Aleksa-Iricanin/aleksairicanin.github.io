@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aleksa Iričanin</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+          }
+        .navbar {
+            background: none !important;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 0 20px; /* Adjust the spacing as needed */
+            transition: transform 0.3s;
+        }
+
+        .navbar-nav .nav-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            position: relative;
+        }
+
+        .navbar-nav .nav-item .nav-link::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: #007bff; /* Change this color as needed */
+            bottom: -2px;
+            left: 0;
+            transition: width 0.3s;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+
+<body class="bg-light">
+
+    <!-- NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-bottom: 50px;padding-top: 20px;">
+       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav" style="font-size:28px;">
+            <li class="nav-item">
+              <a class="nav-link" href="#Omeni">O meni <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Obrazovanje">Obrazovanje</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Stažiranja">Stažiranja</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Page Container -->
+    <div class="container" style="max-width: 1080px;">
+
+        <!-- The Grid -->
+        <div class="row">
+
+            <!-- Left Column -->
+            <div class="col-md-4">
+
+                <div class="card">
+                    <img src="img/picture.jfif" class="card-img-top" alt="Slika">
+                    <div class="card-body">
+                        <h2 class="card-title">Aleksa Iričanin</h2>
+                        <p><i class="fa fa-briefcase fa-fw text-teal"></i>Diplomirani inženjer "Informacionih tehnologija"</p>
+                        <p><i class="fa fa-home fa-fw text-teal"></i>Srbija, Vrnjačka Banja</p>
+                        <p><i class="fa fa-envelope fa-fw text-teal"></i>aleksairicanin8@gmail.com</p>
+                        <p><i class="fa fa-phone fa-fw text-teal"></i>062/621-809</p>
+                        <hr>
+
+                        <p><b><i class="fa fa-asterisk fa-fw text-teal"></i>Veštine</b></p>
+                        <p>Programiranje</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-teal" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Baze podataka</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-teal" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Kreativnost</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-teal" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p>Dizajniranje</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-teal" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <br>
+
+                        <p class="text-teal"><b><i class="fa fa-globe fa-fw text-teal"></i>Jezici</b></p>
+                        <p>Engleski</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-teal" role="progressbar" style="width: 92%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-8">
+                
+                <div class="card mb-4" id="Omeni">
+                    <div class="card-body">
+                        <h2 class="card-title text-teal"><i class="fa fa-certificate fa-fw"></i>O meni</h2>
+                        <div class="card-text">
+                            <p>
+                                Moja prva iskustva sa programiranjem i veb dizajnom počinju od osnovne škole gde sam
+                                pokupio osnovna znanja iz HTML-a i izrade logičkih algoritama. U srednjoj školi sam
+                                proširio svoje veštine u programiranju kroz predmete programiranja, dok sam na
+                                fakultetu učio o naprednijim konceptima.
+                            </p>
+                        </div>
+                        <hr>
+                        
+                       
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body" id="Obrazovanje">
+                        <h2 class="card-title text-teal"><i class="fa fa-certificate fa-fw"></i>Obrazovanje</h2>
+                        <div class="card-text">
+                            <h5 class="card-subtitle mb-2 text-muted"><b>Elektro-saobraćajna tehnička škola "Nikola Tesla", Kraljevo</b></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"><i class="fa fa-calendar fa-fw"></i>2015 - 2019</h6>
+                            <p>Srednja škola</p>
+                            <p>Završio sam smer "Elektrotehničar informacionih tehnologija" i za vreme srednje
+                                škole sam proširio svoja znanja gde sam naučio jezike: C#, C/C++, Java, PHP i
+                                osnove HTML i CSS-a. Razumem i govorim tečno engleski jezik. Kursevi na kojima
+                                sam učestvovao i stekao sertifikate:
+                            </p>
+                            <ul> 
+                                <li>Oracle Java programming</li>
+                                <li>Oracle DataBase foundations</li>
+                                <li>Cisco Junior IT certificate</li>
+                            </ul>    
+                        </div>
+                        <hr>
+                        <div class="card-text">
+                            <h5 class="card-subtitle mb-2 text-muted"><b>Fakultet tehničkih nauka, Čačak</b></h5>
+                            <h6 class="card-subtitle mb-2 text-muted"><i class="fa fa-calendar fa-fw"></i>2019 - 2023</h6>
+                            <p>Fakultet</p>
+                            <p>Stečeno znanje na fakultetu sam unapredio uz temeljno razumevanje
+                                softverskog razvoja kroz sveobuhvatne kurseve koji obuhvataju programiranje,
+                                baze podataka, algoritme i strukture podataka, kao i kroz rad na timskim
+                                projektima uz primenu agilnih metoda. Razvoj aplikacija od početka do kraja sa
+                                obezbeđivanjem kvaliteta kroz testiranje je predstavljao značajan faktor svakog
+                                projekta. Fakultet sam završio sa prosečnom ocenom 9.36 i stekao zvanje
+                                "Diplomirani inženjer informacionih tehnologija".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body" id="Stažiranja">
+                        <h2 class="card-title text-teal"><i class="fa fa-suitcase fa-fw"></i>Stažiranja</h2>
+                        <div class="card-text">
+                            <h5 class="card-subtitle mb-2 text-muted"><b>Quantox</b></h5>
+                            <p>Tokom stručnog usavršavanja bio sam zadužen za izradu landing stranica korišćenjem HTML i CSS-a kao i izrade mini aplikacija uz koriščenje JavaScript-a.</p>
+                        </div>
+                        <hr>
+                        <div class="card-text">
+                            <h5 class="card-subtitle mb-2 text-muted"><b>Brezna</b></h5>
+                            <p>Kao polaznik kompanije imao sam priliku da se upustim u RPA projekat koji je razvijen pomoću Java programskog jezika. </p>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+
+        <footer class="container-fluid text-center mt-4 p-4">
+            <p>Korisni linkovi</p>
+            <a href="https://www.linkedin.com/in/aleksa-iricanin-286179266/" target="_blank"><i class="fa fa-linkedin fa-2x p-2 "></i></a>
+            <a href="https://github.com/Aleksa-Iricanin/Projekti"  target="_blank"><i class="fa fa-github fa-2x p-2"></i></a>
+            <p> Aleksa Iričanin - All Rights Reserved</a></p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+
+</body>
+
+</html>
